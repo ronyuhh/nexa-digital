@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nexa Digital helps businesses build modern websites and grow online.">
+    <title>Nexa Digital | Websites That Grow Your Business</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="logo">Nexa<span>Digital</span></a>
+
+            <button class="menu-toggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">YOUR DIGITAL GROWTH PARTNER</p>
+                <h1>We build websites that help your business <span>grow.</span></h1>
+                <p class="hero-description">
+                    We help ambitious businesses stand out online with
+                    modern websites, thoughtful design, and digital solutions.
+                </p>
+                <a href="#contact" class="button">Let's Work Together</a>
+            </div>
+
+            <div class="hero-card">
+                <p class="card-label">YOUR NEXT BIG IDEA</p>
+                <div class="hero-illustration" aria-hidden="true">
+                    <div class="illustration-window">
+                        <div class="window-dots">● ● ●</div>
+                        <div class="illustration-line"></div>
+                        <div class="illustration-line short"></div>
+                        <div class="illustration-block"></div>
+                    </div>
+                </div>
+                <p>Ideas into digital experiences.</p>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">WHAT WE DO</p>
+                    <h2>Solutions for your next stage of growth</h2>
+                    <p>Everything you need to build a stronger online presence.</p>
+                </div>
+
+                <div class="service-grid">
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">01</div>
+                        <h3>Web Design</h3>
+                        <p>Clean, user-friendly designs that communicate your brand.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">02</div>
+                        <h3>Web Development</h3>
+                        <p>Responsive, accessible websites built for real users.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">03</div>
+                        <h3>Digital Strategy</h3>
+                        <p>Practical ideas to help your business reach more people.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section container" id="about">
+            <div class="about-mark" aria-hidden="true">N.</div>
+            <div>
+                <p class="eyebrow">ABOUT NEXA DIGITAL</p>
+                <h2>Small details. Meaningful results.</h2>
+                <p>
+                    We believe a great website should be easy to use,
+                    work on every screen, and make a business's purpose clear.
+                    Our approach combines thoughtful design with practical technology.
+                </p>
+                <a href="#contact" class="text-link">Tell us about your project →</a>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container contact-inner">
+                <div>
+                    <p class="eyebrow">LET'S CONNECT</p>
+                    <h2>Have a project in mind?</h2>
+                    <p>Tell us a little about what you need.</p>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your name" required>
+
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="you@example.com" required>
+
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message" rows="4"
+                              placeholder="Tell us about your project" required></textarea>
+
+                    <button type="submit" class="button">Send Message</button>
+                    <p id="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#home" class="logo">Nexa<span>Digital</span></a>
+            <p>© <span id="year"></span> Nexa Digital. Practice project.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
