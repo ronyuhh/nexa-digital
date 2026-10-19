@@ -231,22 +231,50 @@
                     <p>Tell us a little about what you need.</p>
                 </div>
 
-                <form class="contact-form" id="contact-form">
-                    <label for="name">Your name</label>
-                    <input type="text" id="name" name="name"
-                           placeholder="Enter your name" required>
+                
+<form
+    id="contact-form"
+    action="https://formspree.io/f/xjygdajl"
+    method="POST"
+>
+  <div class="form-group">
+    <label for="name">Your name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Enter your name"
+      required
+    />
+  </div>
 
-                    <label for="email">Email address</label>
-                    <input type="email" id="email" name="email"
-                           placeholder="you@example.com" required>
+  <div class="form-group">
+    <label for="email">Your email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter your email"
+      required
+    />
+  </div>
 
-                    <label for="message">Your message</label>
-                    <textarea id="message" name="message" rows="4"
-                              placeholder="Tell us about your project" required></textarea>
+  <div class="form-group">
+    <label for="message">Your message</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="5"
+      placeholder="Tell us about your project"
+      required
+    ></textarea>
+  </div>
 
-                    <button type="submit" class="button">Send Message</button>
-                    <p id="form-status" role="status" aria-live="polite"></p>
-                </form>
+  <button type="submit" class="btn btn-primary">
+    Send Message
+  </button>
+</form>
+
             </div>
         </section>
     </main>
